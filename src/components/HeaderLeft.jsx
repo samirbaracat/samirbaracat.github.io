@@ -40,7 +40,7 @@ const HeaderLeft = ({darkMode, toggleDarkMode}) => {
             </li>
             <li className='flex items-center gap-2'>
               <BiPhone className='text-xl' />
-              <span>(65) 99288-5759</span>
+              <span>(65) 99216-6951</span>
             </li>
           </ul>
         </div>
