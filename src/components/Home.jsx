@@ -1,3 +1,5 @@
+import { BiLogoJava } from 'react-icons/bi';
+
 const Home = () => {
   return (
     <div className="min-h-screen flex-[3] transition-all duration-500 dark:bg-black dark:text-white">
@@ -101,22 +103,19 @@ const Home = () => {
         </div>
 
         <div className="max-w-3xl space-y-8">
+
           <h1 className="text-2xl font-bold md:text-4xl">Projetos</h1>
           <div className="flex flex-wrap gap-3">
-            <span className='bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full'>Em Breve</span>
+            <span className='bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full'>Back end</span>
           </div>
-          {/* <div className="text-baseline space-y-3">
-            <h3 className="text-sm font-semibold md:text-lg">Back-End</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
-              Em breve...
-            </p>
-          </div>
-          <div className="text-baseline space-y-3">
-            <h3 className="text-sm font-semibold md:text-lg">Front-End</h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 md:text-base">
-              Em breve...
-            </p>
-          </div> */}
+
+          <a href="https://github.com/samirbaracat/spring-actuator" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <div className="flex flex-wrap gap-3">
+              <BiLogoJava className='text-5xl rounded-full' />
+            </div>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Boot Actuator</h5>
+            <p className="font-normal text-gray-700 dark:text-gray-400">Monitoramento de uma API REST</p>
+          </a>
 
         </div>
 
