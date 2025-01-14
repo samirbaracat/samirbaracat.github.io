@@ -1,5 +1,7 @@
 import { BiLogoJava } from 'react-icons/bi';
 import { SiSwagger } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
 
 const Home = () => {
   return (
@@ -103,37 +105,61 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl space-y-8">
-
+        <div className="space-y-10">
           <h1 className="text-2xl font-bold md:text-4xl">Projetos</h1>
-          <div className="flex flex-wrap gap-3">
-            <span className='bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full'>Back end</span>
+          <div className="flex flex-col lg:flex-row lg:gap-20">
+            <div className='my-2'>
+              <ul>
+                <span className='bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full'>Back end</span>
+                <li className='py-2'>
+                  <a href="https://github.com/samirbaracat/spring-actuator" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div className="flex flex-wrap gap-3">
+                      <BiLogoJava className='text-5xl rounded-full' />
+                    </div>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Boot Actuator</h5>
+                    <p className="font-normal text-gray-700 dark:text-gray-400">Monitoramento de uma API REST</p>
+                  </a>
+                </li>            
+                <li className='py-2'>
+                  <a href="https://github.com/samirbaracat/api-openfeign" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div className="flex flex-wrap gap-3">
+                      <BiLogoJava className='text-5xl rounded-full' />
+                    </div>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Cloud OpenFeign</h5>
+                    <p className="font-normal text-gray-700 dark:text-gray-400">Consumindo serviços em uma API RESTful</p>
+                  </a>
+                </li>
+                <li className='py-2'>
+                  <a href="https://github.com/samirbaracat/doc-swagger" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div className="flex flex-wrap gap-3">
+                      <BiLogoJava className='text-5xl rounded-full' />
+                      <SiSwagger className='text-5xl rounded-full' />
+                    </div>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Boot e Swagger</h5>
+                    <p className="font-normal text-gray-700 dark:text-gray-400">Documentando uma API com Swagger</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div className='my-2'>
+              <ul>
+                <span className='bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-400 px-3 py-1 rounded-full'>Front end</span>
+                <li className='py-2'>
+                  <a href="https://github.com/samirbaracat/sidebar-responsive" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <div className="flex flex-wrap gap-3">
+                      <FaReact className='text-5xl rounded-full' />
+                      <RiTailwindCssFill className='text-5xl rounded-full' />
+                    </div>
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">React e TailwindCSS</h5>
+                    <p className="font-normal text-gray-700 dark:text-gray-400">Construindo uma Sidebar responsiva</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </div>
 
-          <a href="https://github.com/samirbaracat/spring-actuator" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <div className="flex flex-wrap gap-3">
-              <BiLogoJava className='text-5xl rounded-full' />
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Boot Actuator</h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">Monitoramento de uma API REST</p>
-          </a>
-
-          <a href="https://github.com/samirbaracat/api-openfeign" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <div className="flex flex-wrap gap-3">
-              <BiLogoJava className='text-5xl rounded-full' />
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Cloud OpenFeign</h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">Consumindo serviços em uma API RESTful</p>
-          </a>
-
-          <a href="https://github.com/samirbaracat/doc-swagger" target='_blank' className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-            <div className="flex flex-wrap gap-3">
-              <BiLogoJava className='text-5xl rounded-full' />
-              <SiSwagger className='text-5xl rounded-full' />
-            </div>
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Spring Boot e Swagger</h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">Documentando uma API com Swagger</p>
-          </a>
 
         </div>
 
